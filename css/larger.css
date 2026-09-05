@@ -1,0 +1,111 @@
+/* larger.css - Desktop styles with media query */
+
+@media (min-width: 768px) {
+    /* ===== Header ===== */
+    header {
+        padding: 1rem 2rem;
+        gap: 1.5rem;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .site-name {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    /* ===== Navigation (horizontal flex) ===== */
+    .nav-menu {
+        display: block;
+        background-color: var(--near-black);
+    }
+
+    .nav-menu ul {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .nav-menu a {
+        padding: 0.85rem 2.5rem;
+        border-bottom: none;
+        font-size: 1.1rem;
+    }
+
+    .nav-menu a.active {
+        background-color: var(--dark-gray);
+    }
+
+    .nav-menu a:hover {
+        background-color: var(--dark-gray);
+    }
+
+    /* ===== Main ===== */
+    main {
+        padding: 1rem 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    /* ===== Two-column About / Photo ===== */
+    .about-photo-row {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .about-card p,
+    .photo-card .student-photo {
+        min-height: 200px;
+    }
+
+    .photo-card .student-photo {
+        max-width: 300px;
+    }
+
+    /* ===== Courses ===== */
+    .filter-buttons {
+        gap: 1rem;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1rem;
+    }
+
+    .course-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .course-card {
+        text-align: center;
+        padding: 1.25rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+        padding: 2.5rem 2rem;
+    }
+
+    .social-links {
+        gap: 3rem;
+    }
+}
