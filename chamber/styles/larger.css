@@ -1,0 +1,79 @@
+/* larger.css - Wider view styles for the Lagos Harbor Chamber of Commerce */
+
+/* ===== Tablet & up ===== */
+@media (min-width: 700px) {
+    .site-header {
+        padding: 1rem 2rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+        background-color: var(--primary-dark);
+    }
+
+    .nav-menu ul {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .nav-menu a {
+        padding: 0.85rem 2.25rem;
+        border-bottom: none;
+        font-size: 1.05rem;
+    }
+
+    main {
+        padding: 1.5rem 2rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .member-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 2rem;
+        text-align: left;
+        padding: 2.5rem 2rem;
+    }
+
+    .footer-dev {
+        margin-top: 0;
+        border-top: none;
+        padding-top: 0;
+        text-align: right;
+    }
+}
+
+/* ===== Desktop & up ===== */
+@media (min-width: 1024px) {
+    .site-header {
+        gap: 1.5rem;
+    }
+
+    .site-name {
+        font-size: 1.15rem;
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}

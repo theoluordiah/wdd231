@@ -1,0 +1,332 @@
+/* small.css - Base (mobile-first) styles for the Lagos Harbor Chamber of Commerce */
+
+:root {
+    --primary: #0e4d3a;
+    --primary-dark: #0a3527;
+    --accent: #e8a900;
+    --near-black: #18231e;
+    --light: #f2f5f3;
+    --white: #ffffff;
+    --text-gray: #55615c;
+    --divider: #d8dfda;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--near-black);
+    background-color: var(--white);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* ===== Header / Top Bar ===== */
+.site-header {
+    background-color: var(--white);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 1px solid var(--divider);
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: var(--near-black);
+}
+
+.logo {
+    height: 44px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.site-name {
+    font-family: 'Sora', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* ===== Navigation ===== */
+.nav-menu {
+    display: none;
+    background-color: var(--primary-dark);
+}
+
+.nav-menu.open {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 1rem 1.25rem;
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: 500;
+}
+
+.nav-menu a.active,
+.nav-menu a:hover {
+    background-color: var(--primary);
+    color: var(--accent);
+}
+
+/* ===== Main ===== */
+main {
+    width: 100%;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Sora', Arial, sans-serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin: 1.25rem 0 0.5rem;
+    color: var(--primary-dark);
+}
+
+.intro {
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    max-width: 60ch;
+}
+
+/* ===== View Toggle ===== */
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.5rem;
+}
+
+.view-btn {
+    padding: 0.6rem 1.25rem;
+    background-color: var(--light);
+    color: var(--primary-dark);
+    border: 1px solid var(--divider);
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.view-btn.active {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.view-btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* ===== Member Grid (cards) ===== */
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.member-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 1.25rem;
+    box-shadow: 0 1px 3px rgba(24, 35, 30, 0.08);
+}
+
+.member-card .member-logo {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border: 1px solid var(--divider);
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.member-card .member-name {
+    font-family: 'Sora', Arial, sans-serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 0.25rem;
+}
+
+.member-card .member-industry {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-gray);
+    margin-bottom: 0.5rem;
+}
+
+.member-card .member-description {
+    font-size: 0.92rem;
+    margin-bottom: 0.75rem;
+}
+
+.member-card .member-meta {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.member-card .member-link {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* ===== Member List (one-column) ===== */
+.member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.member-list .member-card {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+}
+
+.member-list .member-logo {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.member-list .member-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.member-list .member-name {
+    margin-bottom: 0;
+}
+
+.member-list .member-description,
+.member-list .member-industry {
+    display: none;
+}
+
+.member-list .member-meta {
+    margin: 0;
+}
+
+/* ===== Membership Level Badge ===== */
+.level-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+    width: fit-content;
+}
+
+.level-gold {
+    background-color: var(--accent);
+    color: #3a2c00;
+}
+
+.level-silver {
+    background-color: #c8cecf;
+    color: #2c3436;
+}
+
+.level-member {
+    background-color: var(--light);
+    color: var(--primary-dark);
+    border: 1px solid var(--divider);
+}
+
+.member-list .level-badge {
+    margin-bottom: 0;
+    align-self: center;
+    margin-left: auto;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--light);
+    border-top: 1px solid var(--divider);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.35rem;
+}
+
+.footer-contact p:first-child {
+    font-family: 'Sora', Arial, sans-serif;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.footer-dev {
+    margin-top: 1.25rem;
+    border-top: 1px solid var(--divider);
+    padding-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* ===== Small Screens ===== */
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .logo {
+        height: 36px;
+    }
+
+    .site-name {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

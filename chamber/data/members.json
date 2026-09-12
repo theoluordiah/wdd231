@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Almeda Tech Solutions",
+        "address": "15 Admiralty Way, Lekki Phase 1, Lagos",
+        "phone": "+234 801 234 5678",
+        "website": "https://almedatech.example.com",
+        "image": "member-1.png",
+        "membershipLevel": 3,
+        "industry": "Software & IT Services",
+        "description": "Full-stack software development, cloud hosting and data analytics for growing businesses.",
+        "founded": 2018
+    },
+    {
+        "name": "Bluewave Logistics",
+        "address": "3 Wharf Road, Apapa, Lagos",
+        "phone": "+234 802 345 6789",
+        "website": "https://bluewavelogistics.example.com",
+        "image": "member-2.png",
+        "membershipLevel": 2,
+        "industry": "Logistics & Shipping",
+        "description": "Freight forwarding, port clearing and last-mile delivery across West Africa.",
+        "founded": 2015
+    },
+    {
+        "name": "Cedar & Co Fine Foods",
+        "address": "22 Bourdillon Road, Ikoyi, Lagos",
+        "phone": "+234 803 456 7890",
+        "website": "https://cedarandco.example.com",
+        "image": "member-3.png",
+        "membershipLevel": 1,
+        "industry": "Food & Catering",
+        "description": "Farm-to-table catering, event dining and artisanal pantry goods.",
+        "founded": 2020
+    },
+    {
+        "name": "Deyi & Partners Legal",
+        "address": "48 Adeola Odeku Street, Victoria Island, Lagos",
+        "phone": "+234 804 567 8901",
+        "website": "https://deyipartners.example.com",
+        "image": "member-4.png",
+        "membershipLevel": 3,
+        "industry": "Legal Services",
+        "description": "Commercial law, corporate governance and startup compliance counsel.",
+        "founded": 2012
+    },
+    {
+        "name": "Eku Construction Ltd",
+        "address": "9 Oba Akran Avenue, Ikeja, Lagos",
+        "phone": "+234 805 678 9012",
+        "website": "https://ekuconstruction.example.com",
+        "image": "member-5.png",
+        "membershipLevel": 1,
+        "industry": "Construction & Real Estate",
+        "description": "Residential and commercial building, renovations and property management.",
+        "founded": 2016
+    },
+    {
+        "name": "Ivory Palm Hotels",
+        "address": "112 Ozumba Mbadiwe Road, Victoria Island, Lagos",
+        "phone": "+234 806 789 0123",
+        "website": "https://ivorypalmhotels.example.com",
+        "image": "member-6.png",
+        "membershipLevel": 2,
+        "industry": "Hospitality & Tourism",
+        "description": "Boutique hotel and conference centre hosting business and leisure guests.",
+        "founded": 2011
+    },
+    {
+        "name": "Kaira Fashion House",
+        "address": "5 Allen Avenue, Ikeja, Lagos",
+        "phone": "+234 807 890 1234",
+        "website": "https://kairafashion.example.com",
+        "image": "member-7.png",
+        "membershipLevel": 1,
+        "industry": "Retail & Fashion",
+        "description": "Contemporary African-inspired fashion, bespoke tailoring and styling services.",
+        "founded": 2021
+    },
+    {
+        "name": "Zenith Clean Energy",
+        "address": "27 Omorinre Johnson Street, Lekki Phase 1, Lagos",
+        "phone": "+234 808 901 2345",
+        "website": "https://zenithcleanenergy.example.com",
+        "image": "member-8.png",
+        "membershipLevel": 3,
+        "industry": "Energy & Renewables",
+        "description": "Solar installation, inverter systems and energy efficiency consulting.",
+        "founded": 2019
+    }
+]
