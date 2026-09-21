@@ -1,4 +1,4 @@
-const OPENWEATHER_API_KEY =  "117bef5719558f1600b8067371296156";
+const OPENWEATHER_API_KEY = window.OPENWEATHER_APPID;
 
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lagos,NG&units=metric&appid=${OPENWEATHER_API_KEY}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Lagos,NG&units=metric&appid=${OPENWEATHER_API_KEY}`;
