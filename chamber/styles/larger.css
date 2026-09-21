@@ -37,6 +37,26 @@
         font-size: 2.25rem;
     }
 
+    .hero {
+        height: 480px;
+    }
+
+    .hero-content {
+        padding: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.05rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
     .member-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -70,6 +90,18 @@
     }
 
     .member-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        height: 560px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .spotlight-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
