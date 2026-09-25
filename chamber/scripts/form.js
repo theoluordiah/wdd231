@@ -30,15 +30,35 @@ modals.forEach((modal) => {
     });
 });
 
+const membershipLabels = {
+    np: "NP Membership (Non-Profit)",
+    bronze: "Bronze Membership",
+    silver: "Silver Membership",
+    gold: "Gold Membership"
+};
+
 const summaryFields = [
     { key: "fname", label: "First Name" },
     { key: "lname", label: "Last Name" },
     { key: "email", label: "Email Address" },
     { key: "phone", label: "Mobile Number" },
     { key: "organization", label: "Business Name" },
-    { key: "membership", label: "Membership Level" },
-    { key: "timestamp", label: "Application Submitted" }
+    { key: "membership", label: "Membership Level", format: (value) => membershipLabels[value] || value },
+    { key: "timestamp", label: "Application Submitted", format: formatTimestamp }
 ];
+
+function formatTimestamp(value) {
+    const date = new Date(value);
+
+    if (Number.isNaN(date.getTime())) {
+        return value;
+    }
+
+    return date.toLocaleString("en-US", {
+        dateStyle: "long",
+        timeStyle: "short"
+    });
+}
 
 const summary = document.getElementById("application-summary");
 const fallback = document.getElementById("summary-fallback");
@@ -52,6 +72,7 @@ if (summary) {
         list.classList.add("summary-list");
 
         summaryFields.forEach((field) => {
+            const raw = params.get(field.key);
             const row = document.createElement("div");
             row.classList.add("summary-row");
 
@@ -59,7 +80,7 @@ if (summary) {
             term.textContent = field.label;
 
             const value = document.createElement("dd");
-            value.textContent = params.get(field.key) || "Not provided";
+            value.textContent = raw ? (field.format ? field.format(raw) : raw) : "Not provided";
 
             row.append(term, value);
             list.appendChild(row);
