@@ -695,6 +695,8 @@ h2 {
     border-left: 6px solid var(--primary);
     border-radius: 8px;
     padding: 1.1rem 1.25rem;
+    opacity: 0;
+    animation: card-rise 0.55s ease-out forwards;
 }
 
 .level-card h3 {
@@ -762,10 +764,20 @@ h2 {
     }
 }
 
-.level-card {
-    opacity: 0;
-    animation: card-rise 0.55s ease-out forwards;
-    animation-delay: calc(var(--card-order, 0) * 120ms + 150ms);
+.level-card:nth-child(1) {
+    animation-delay: 0.15s;
+}
+
+.level-card:nth-child(2) {
+    animation-delay: 0.27s;
+}
+
+.level-card:nth-child(3) {
+    animation-delay: 0.39s;
+}
+
+.level-card:nth-child(4) {
+    animation-delay: 0.51s;
 }
 
 @media (prefers-reduced-motion: reduce) {
