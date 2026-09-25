@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Lagos Harbor Chamber of Commerce — local landmarks, the harbor districts and the events and community projects our members support.">
+    <meta name="author" content="Oluchukwu Ordiah">
+    <title>Discover | Lagos Harbor Chamber of Commerce</title>
+
+    <meta property="og:title" content="Discover | Lagos Harbor Chamber of Commerce">
+    <meta property="og:description" content="Discover the Lagos Harbor Chamber of Commerce — local landmarks, the harbor districts and the events and community projects our members support.">
+    <meta property="og:image" content="https://theoluordiah.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://theoluordiah.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lagos Harbor Chamber of Commerce">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Lagos Harbor Chamber of Commerce Home">
+            <img src="images/logo.svg" alt="Lagos Harbor Chamber of Commerce logo" class="logo">
+            <span class="site-name">Lagos Harbor Chamber</span>
+        </a>
+        <button id="menu-btn" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
+    </header>
+    <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html" class="active" aria-current="page">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Discover Lagos</h1>
+        <p class="intro">Get to know the city our members call home. Explore harbor landmarks, browse the chamber's featured local businesses and see the community projects your membership supports.</p>
+
+        <div class="info-grid">
+            <section class="section">
+                <h2>Harbor Landmarks</h2>
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-body">
+                            <h3>Marina Waterfront</h3>
+                            <p>Sunrise walks, weekend markets and the city's most photographed harbor view.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-body">
+                            <h3>Freedom Park</h3>
+                            <p>The amphitheatre stage where chamber performances and cultural festivals are held.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-body">
+                            <h3>Marina Market</h3>
+                            <p>Artisan stalls, food vendors and a weekly harbor craft fair supported by NP members.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Why Join Us</h2>
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-body">
+                            <h3>Networking</h3>
+                            <p>Monthly breakfasts and events that put you in front of decision makers across Lagos.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-body">
+                            <h3>Visibility</h3>
+                            <p>Directory listings, newsletter features and homepage spotlights for member businesses.</p>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <div class="event-body">
+                            <h3>Growth</h3>
+                            <p>Training workshops, discount rates and a community that shares what works.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <section class="section">
+            <h2>Ready to Take the Next Step?</h2>
+            <p class="intro">Membership starts at no cost for non-profit organizations. Pick a level and submit your application in a few minutes.</p>
+            <a class="cta-btn" href="join.html">Join the Chamber</a>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Lagos Harbor Chamber of Commerce</strong></p>
+            <p>3 Marina Avenue, Victoria Island, Lagos, Nigeria</p>
+            <p>+234 800 555 0199</p>
+            <p>info@lagosharbor.example.com</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="current-year"></span> Lagos Harbor Chamber of Commerce</p>
+            <p>WDD 231 &bull; Oluchukwu Ordiah</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to join the Lagos Harbor Chamber of Commerce — choose a membership level from NP to Gold and submit the chamber membership application.">
+    <meta name="author" content="Oluchukwu Ordiah">
+    <title>Chamber Membership Join | Lagos Harbor Chamber of Commerce</title>
+
+    <meta property="og:title" content="Chamber Membership Join | Lagos Harbor Chamber of Commerce">
+    <meta property="og:description" content="Apply to join the Lagos Harbor Chamber of Commerce — choose a membership level from NP to Gold and submit the chamber membership application.">
+    <meta property="og:image" content="https://theoluordiah.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://theoluordiah.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lagos Harbor Chamber of Commerce">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo-link" href="index.html" aria-label="Lagos Harbor Chamber of Commerce Home">
+            <img src="images/logo.svg" alt="Lagos Harbor Chamber of Commerce logo" class="logo">
+            <span class="site-name">Lagos Harbor Chamber</span>
+        </a>
+        <button id="menu-btn" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">&#9776;</button>
+    </header>
+    <nav id="nav-menu" class="nav-menu" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Chamber Membership Join</h1>
+        <p class="intro">Ready to grow with Lagos? Complete the application below to apply for chamber membership. Every level connects your business with fellow members, events and local opportunities.</p>
+
+        <div class="join-layout">
+            <form class="join-form" id="join-form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}" placeholder="e.g. Business Owner">
+                        <p class="form-hint">Letters, hyphens and spaces only, at least 7 characters.</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" title="Email Address" autocomplete="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Mobile Phone Number</label>
+                        <input type="tel" id="phone" name="phone" title="Mobile Phone Number" autocomplete="tel" placeholder="+234 800 555 0199" required>
+                    </div>
+
+                    <label class="visually-hidden" for="timestamp">Date and time the form was loaded</label>
+                    <input type="hidden" id="timestamp" name="timestamp" title="Date and Time" value="">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+
+                    <div class="form-group">
+                        <label for="organization">Business/Organization Name</label>
+                        <input type="text" id="organization" name="organization" title="Business or Organization Name" autocomplete="organization" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membership">Membership Level</label>
+                        <select id="membership" name="membership" title="Membership Level" required>
+                            <option value="">Please select a membership level</option>
+                            <option value="np">NP Membership &mdash; Non-Profit (no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Business/Organization Description</label>
+                        <textarea id="description" name="description" title="Business or Organization Description" placeholder="Tell us about your products, services and the community you serve."></textarea>
+                    </div>
+                </fieldset>
+
+                <input type="submit" class="submit-btn" value="Submit Application">
+            </form>
+
+            <aside aria-labelledby="levels-heading">
+                <h2 id="levels-heading">Membership Levels</h2>
+                <p class="intro">Select a level to review the benefits included with your membership.</p>
+
+                <div class="level-cards">
+                    <section class="level-card" data-level="np" style="--card-order: 0">
+                        <h3>NP Membership</h3>
+                        <p class="level-cost">No fee &bull; For non-profit organizations</p>
+                        <a class="level-info-link" href="#modal-np" aria-haspopup="dialog">View NP benefits</a>
+                    </section>
+
+                    <section class="level-card" data-level="bronze" style="--card-order: 1">
+                        <h3>Bronze Membership</h3>
+                        <p class="level-cost">&#8358;50,000 / year</p>
+                        <a class="level-info-link" href="#modal-bronze" aria-haspopup="dialog">View Bronze benefits</a>
+                    </section>
+
+                    <section class="level-card" data-level="silver" style="--card-order: 2">
+                        <h3>Silver Membership</h3>
+                        <p class="level-cost">&#8358;120,000 / year</p>
+                        <a class="level-info-link" href="#modal-silver" aria-haspopup="dialog">View Silver benefits</a>
+                    </section>
+
+                    <section class="level-card" data-level="gold" style="--card-order: 3">
+                        <h3>Gold Membership</h3>
+                        <p class="level-cost">&#8358;250,000 / year</p>
+                        <a class="level-info-link" href="#modal-gold" aria-haspopup="dialog">View Gold benefits</a>
+                    </section>
+                </div>
+            </aside>
+        </div>
+
+        <dialog class="modal" id="modal-np" aria-labelledby="modal-np-title">
+            <div class="modal-inner">
+                <h2 id="modal-np-title">NP Membership Benefits</h2>
+                <p>Free membership for registered non-profit organizations serving the Lagos community.</p>
+                <ul>
+                    <li>Full membership directory listing</li>
+                    <li>Invitation to chamber town halls and community outreach programs</li>
+                    <li>Quarterly newsletter inclusion</li>
+                    <li>Free access to volunteer match events</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="modal" id="modal-bronze" aria-labelledby="modal-bronze-title">
+            <div class="modal-inner">
+                <h2 id="modal-bronze-title">Bronze Membership Benefits</h2>
+                <p>The entry point for local businesses building their first chamber relationships.</p>
+                <ul>
+                    <li>Everything in NP Membership</li>
+                    <li>Full membership directory listing with industry category</li>
+                    <li>Invitation to monthly networking breakfasts</li>
+                    <li>10% discount on chamber workshops and training</li>
+                    <li>Monthly chamber newsletter feature</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="modal" id="modal-silver" aria-labelledby="modal-silver-title">
+            <div class="modal-inner">
+                <h2 id="modal-silver-title">Silver Membership Benefits</h2>
+                <p>For established businesses ready to grow visibility and referral volume.</p>
+                <ul>
+                    <li>Everything in Bronze Membership</li>
+                    <li>Priority seating at chamber headline events</li>
+                    <li>Rotating homepage spotlight placement on the chamber site</li>
+                    <li>20% discount on training and advertising packages</li>
+                    <li>Two guest passes per member event</li>
+                    <li>Listing in the chamber mobile member app</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+
+        <dialog class="modal" id="modal-gold" aria-labelledby="modal-gold-title">
+            <div class="modal-inner">
+                <h2 id="modal-gold-title">Gold Membership Benefits</h2>
+                <p>Our premier tier for businesses that want to lead the harbor community.</p>
+                <ul>
+                    <li>Everything in Silver Membership</li>
+                    <li>Reserved front-row seating at all chamber events</li>
+                    <li>Featured homepage spotlight with a dedicated member story</li>
+                    <li>40% discount on training, advertising and sponsorship packages</li>
+                    <li>Four guest passes per member event</li>
+                    <li>Named listing in the annual chamber impact report</li>
+                    <li>Voting rights on chamber policy and event decisions</li>
+                </ul>
+                <button class="modal-close" type="button">Close</button>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Lagos Harbor Chamber of Commerce</strong></p>
+            <p>3 Marina Avenue, Victoria Island, Lagos, Nigeria</p>
+            <p>+234 800 555 0199</p>
+            <p>info@lagosharbor.example.com</p>
+        </div>
+        <div class="footer-dev">
+            <p>&copy; <span id="current-year"></span> Lagos Harbor Chamber of Commerce</p>
+            <p>WDD 231 &bull; Oluchukwu Ordiah</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

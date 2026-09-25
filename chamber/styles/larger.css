@@ -57,6 +57,20 @@
         grid-template-columns: 2fr 1fr;
     }
 
+    .join-layout {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .summary-row {
+        grid-template-columns: 13rem 1fr;
+        align-items: baseline;
+        gap: 1rem;
+    }
+
+    .level-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .member-grid {
         grid-template-columns: 1fr 1fr;
     }
