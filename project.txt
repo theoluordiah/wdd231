@@ -1,0 +1,5 @@
+Subject: Lagos tech community guide
+
+Content: The website provides information about technology communities, events, coworking spaces, and resources for developers and creatives in Lagos. Visitors can explore different communities and events, view more information about each one, and submit suggestions through a form.
+
+Reason: I choose this subject because I am interested in software development and the technology community in Lagos. It gives me a subject that I can continue developing while learning how to build a dynamic website with HTML, CSS, JavaScript, and external data.

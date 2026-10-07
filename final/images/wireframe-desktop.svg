@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="570" viewBox="0 0 800 570" font-family="Arial, sans-serif" font-size="16" fill="none" stroke="#333" stroke-width="2">
+  <rect x="1" y="1" width="798" height="568" rx="8" fill="#fff"/>
+
+  <!-- header -->
+  <rect x="10" y="10" width="780" height="50" fill="#ccc"/>
+  <text x="24" y="41" fill="#333" stroke="none">Logo</text>
+  <text x="776" y="41" fill="#333" stroke="none" text-anchor="end">Home   Communities   Events   Spaces   Suggest</text>
+
+  <!-- hero -->
+  <rect x="10" y="70" width="780" height="170" fill="#eee"/>
+  <path d="M10 70l780 170M790 70L10 240" stroke="#bbb"/>
+  <text x="400" y="160" fill="#333" stroke="none" text-anchor="middle">Hero Image</text>
+
+  <!-- filter -->
+  <rect x="10" y="250" width="80" height="28" rx="14"/>
+  <rect x="100" y="250" width="80" height="28" rx="14"/>
+  <rect x="190" y="250" width="80" height="28" rx="14"/>
+  <rect x="280" y="250" width="80" height="28" rx="14"/>
+  <text x="372" y="270" fill="#333" stroke="none">Filter</text>
+
+  <!-- cards -->
+  <rect x="10" y="290" width="250" height="110" fill="#f5f5f5"/>
+  <text x="135" y="350" fill="#333" stroke="none" text-anchor="middle">Community Card</text>
+  <rect x="275" y="290" width="250" height="110" fill="#f5f5f5"/>
+  <text x="400" y="350" fill="#333" stroke="none" text-anchor="middle">Community Card</text>
+  <rect x="540" y="290" width="250" height="110" fill="#f5f5f5"/>
+  <text x="665" y="350" fill="#333" stroke="none" text-anchor="middle">Community Card</text>
+
+  <!-- events -->
+  <rect x="10" y="410" width="780" height="90"/>
+  <text x="24" y="434" fill="#333" stroke="none">Upcoming Events</text>
+  <path d="M24 455h500M24 472h420M24 489h460" stroke="#bbb"/>
+
+  <!-- footer -->
+  <rect x="10" y="510" width="780" height="50" fill="#ccc"/>
+  <text x="400" y="541" fill="#333" stroke="none" text-anchor="middle">Footer</text>
+</svg>
