@@ -894,6 +894,148 @@ dialog.modal::backdrop {
     margin-left: 1.25rem;
 }
 
+/* ===== Discover Page ===== */
+.visit-message {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--light);
+    border-left: 5px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.visit-message[hidden] {
+    display: none;
+}
+
+.visit-close {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: var(--primary-dark);
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+    margin-bottom: 2.5rem;
+}
+
+.discover-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "photo"
+        "address"
+        "desc"
+        "button";
+    grid-template-rows: auto auto auto 1fr auto;
+    gap: 0.6rem;
+    background-color: var(--light);
+    border: 1px solid var(--divider);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.discover-card h2 {
+    grid-area: title;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.discover-card figure {
+    grid-area: photo;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.discover-card address {
+    grid-area: address;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+.discover-card p {
+    grid-area: desc;
+}
+
+.learn-btn {
+    grid-area: button;
+    justify-self: start;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #3a2c00;
+    background-color: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.25rem;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background-color: #f7c22e;
+}
+
+.learn-btn:focus-visible,
+.visit-close:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.modal-inner address {
+    font-style: normal;
+    color: var(--text-gray);
+    margin-bottom: 0.75rem;
+}
+
+.modal-inner p {
+    margin-bottom: 1.25rem;
+}
+
+.photo-credits {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+}
+
+.photo-credits summary {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.photo-credits ul {
+    padding-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+
 /* ===== Footer ===== */
 footer {
     background-color: var(--light);

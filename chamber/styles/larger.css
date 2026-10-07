@@ -123,3 +123,68 @@
         font-size: 2.5rem;
     }
 }
+
+/* ===== Discover: medium screens (641px - 1024px) ===== */
+@media (min-width: 641px) {
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card1"
+            "card2 card3"
+            "card4 card5"
+            "card6 card6"
+            "card7 card8";
+    }
+
+    /* wide cards put the photo beside the text */
+    .discover-card:nth-child(1),
+    .discover-card:nth-child(6) {
+        grid-template-columns: minmax(0, 300px) 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "photo title"
+            "photo address"
+            "photo desc"
+            "photo button";
+        column-gap: 1.25rem;
+    }
+
+    /* image hover effect (not used on mobile) */
+    .discover-card img {
+        transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.08);
+        filter: saturate(1.3) brightness(1.05);
+    }
+}
+
+/* ===== Discover: large screens (1025px and up) ===== */
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card1 card2 card3"
+            "card4 card5 card6 card6"
+            "card7 card7 card8 card8";
+    }
+
+    .discover-card:nth-child(7),
+    .discover-card:nth-child(8) {
+        grid-template-columns: minmax(0, 300px) 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "photo title"
+            "photo address"
+            "photo desc"
+            "photo button";
+        column-gap: 1.25rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .discover-card img {
+        transition: none;
+    }
+}
