@@ -1,0 +1,222 @@
+[
+    {
+        "id": 1,
+        "name": "GDG Lagos",
+        "category": "community",
+        "area": "Yaba",
+        "audience": "All levels",
+        "cost": "Free",
+        "schedule": "Monthly meetups",
+        "summary": "Google Developer Group for developers who build with Android, Flutter, Firebase, Cloud, and the web.",
+        "details": "GDG Lagos is one of the largest developer groups in Nigeria. Members meet for talks, study jams, and hands-on workshops, and the group organizes DevFest Lagos every year. It is a good first community for anyone who wants to meet other developers."
+    },
+    {
+        "id": 2,
+        "name": "She Code Africa Lagos",
+        "category": "community",
+        "area": "Lagos Island",
+        "audience": "Women in tech",
+        "cost": "Free",
+        "schedule": "Monthly meetups",
+        "summary": "Lagos chapter of a community that supports and celebrates women in technology across Africa.",
+        "details": "She Code Africa runs mentorship programs, bootcamps, and meetups for women who are learning or working in tech. The Lagos chapter hosts events where members can share their work, find mentors, and build their network."
+    },
+    {
+        "id": 3,
+        "name": "Forloop Africa",
+        "category": "community",
+        "area": "Yaba",
+        "audience": "Developers",
+        "cost": "Free",
+        "schedule": "Quarterly meetups",
+        "summary": "A developer community that brings engineers together to learn from each other through talks and workshops.",
+        "details": "Forloop started in Lagos to help developers grow by learning from experienced engineers. Its events cover topics like backend, mobile, and career growth, and they are a good place to meet people working at local startups."
+    },
+    {
+        "id": 4,
+        "name": "Open Source Community Africa",
+        "category": "community",
+        "area": "Yaba",
+        "audience": "All levels",
+        "cost": "Free",
+        "schedule": "Meetups and online sessions",
+        "summary": "OSCA helps African developers and designers learn about and contribute to open source projects.",
+        "details": "Open Source Community Africa has a chapter in Lagos that runs meetups, contribution sprints, and the yearly OSCAFEST. Beginners can learn how open source works and make their first contribution with help from mentors."
+    },
+    {
+        "id": 5,
+        "name": "Friends of Figma Lagos",
+        "category": "community",
+        "area": "Victoria Island",
+        "audience": "Designers",
+        "cost": "Free",
+        "schedule": "Meetups every few months",
+        "summary": "A Figma community for product designers, UI/UX designers, and anyone interested in design tools.",
+        "details": "Friends of Figma Lagos brings designers together for design talks, portfolio reviews, and live Figma workshops. It is a friendly space for both new designers and people who already work in product design."
+    },
+    {
+        "id": 6,
+        "name": "AWS User Group Lagos",
+        "category": "community",
+        "area": "Victoria Island",
+        "audience": "Cloud engineers",
+        "cost": "Free",
+        "schedule": "Monthly meetups",
+        "summary": "A community for people who use or want to learn Amazon Web Services and cloud computing.",
+        "details": "The AWS User Group Lagos hosts talks and hands-on labs about cloud services, DevOps, and serverless tools. Members share how they use AWS at work, and the group also helps people prepare for AWS certifications."
+    },
+    {
+        "id": 7,
+        "name": "Data Science Nigeria",
+        "category": "community",
+        "area": "Online",
+        "audience": "Data and AI learners",
+        "cost": "Free",
+        "schedule": "Online classes and bootcamps",
+        "summary": "A community focused on building artificial intelligence and data science skills in Nigeria.",
+        "details": "Data Science Nigeria runs free online classes, bootcamps, and competitions for people who want to learn data science and machine learning. Many of its members are students and young professionals in Lagos."
+    },
+    {
+        "id": 8,
+        "name": "DevFest Lagos",
+        "category": "event",
+        "area": "Lagos Island",
+        "audience": "All levels",
+        "cost": "Free",
+        "schedule": "Every year, usually late in the year",
+        "summary": "A big developer festival with talks and workshops, organized by GDG Lagos.",
+        "details": "DevFest Lagos brings thousands of developers, designers, and students together for a full day of talks, workshops, and networking. Speakers cover the web, mobile, cloud, and AI. Registration usually opens a few weeks before the event."
+    },
+    {
+        "id": 9,
+        "name": "OSCAFEST",
+        "category": "event",
+        "area": "Lagos Island",
+        "audience": "All levels",
+        "cost": "Free",
+        "schedule": "Every year",
+        "summary": "The Open Source Festival hosted by Open Source Community Africa.",
+        "details": "OSCAFEST is a festival about open source in Africa. It has talks, panels, and workshops about contributing to projects, building tools in public, and growing a career through open source."
+    },
+    {
+        "id": 10,
+        "name": "Google I/O Extended Lagos",
+        "category": "event",
+        "area": "Yaba",
+        "audience": "Developers",
+        "cost": "Free",
+        "schedule": "Every year, a few weeks after Google I/O",
+        "summary": "A local event that shares the latest announcements from Google I/O with developers in Lagos.",
+        "details": "At I/O Extended, local speakers explain what was announced at Google I/O and show how to use the new tools. It is a shorter event than DevFest and a good way to keep up with Android, web, and AI updates."
+    },
+    {
+        "id": 11,
+        "name": "Social Media Week Lagos",
+        "category": "event",
+        "area": "Victoria Island",
+        "audience": "Creatives and marketers",
+        "cost": "Paid",
+        "schedule": "Every year",
+        "summary": "A conference about media, technology, and the creative industry in Africa.",
+        "details": "Social Media Week Lagos has talks, panels, and workshops about digital media, content creation, marketing, and technology. It is popular with creatives, founders, and people working in media and communications."
+    },
+    {
+        "id": 12,
+        "name": "Techpoint Africa Build",
+        "category": "event",
+        "area": "Victoria Island",
+        "audience": "Founders and startups",
+        "cost": "Paid",
+        "schedule": "Every year",
+        "summary": "A tech and startup conference organized by Techpoint Africa.",
+        "details": "Techpoint Build brings founders, investors, and tech workers together to talk about building companies in Africa. It includes a startup pitch competition, panels, and plenty of time for networking."
+    },
+    {
+        "id": 13,
+        "name": "Co-Creation Hub (CcHub)",
+        "category": "coworking",
+        "area": "Yaba",
+        "audience": "Founders and developers",
+        "cost": "Paid",
+        "schedule": "Open on weekdays",
+        "summary": "An innovation center in Yaba with coworking space, events, and startup support.",
+        "details": "CcHub is one of the best-known tech hubs in Lagos. It is located on Herbert Macaulay Way in Yaba and offers desk space, meeting rooms, and fast internet. Many community events and meetups are held there."
+    },
+    {
+        "id": 14,
+        "name": "Workstation",
+        "category": "coworking",
+        "area": "Victoria Island",
+        "audience": "Freelancers and teams",
+        "cost": "Paid",
+        "schedule": "Open on weekdays",
+        "summary": "A coworking company with spaces on Victoria Island and other parts of Lagos.",
+        "details": "Workstation offers hot desks, private offices, and meeting rooms with reliable power and internet. It is a good choice for freelancers and small teams who need a quiet place to work close to the business district."
+    },
+    {
+        "id": 15,
+        "name": "Venia Business Hub",
+        "category": "coworking",
+        "area": "Lekki",
+        "audience": "Freelancers and teams",
+        "cost": "Paid",
+        "schedule": "Open on weekdays",
+        "summary": "A coworking and event space in Lekki for startups, freelancers, and remote workers.",
+        "details": "Venia Business Hub has open desks, private offices, and spaces for events and training. It is a good option for people who live on the Lekki side of Lagos and want to avoid traffic to the mainland."
+    },
+    {
+        "id": 16,
+        "name": "Zone Tech Park",
+        "category": "coworking",
+        "area": "Gbagada",
+        "audience": "Startups and developers",
+        "cost": "Paid",
+        "schedule": "Open on weekdays",
+        "summary": "A tech park in Gbagada with workspace, event halls, and support for startups.",
+        "details": "Zone Tech Park offers workspace and event spaces for tech companies and startups. Its location in Gbagada makes it easy to reach from many parts of the mainland, and it hosts tech meetups and training events."
+    },
+    {
+        "id": 17,
+        "name": "AltSchool Africa",
+        "category": "resource",
+        "area": "Online",
+        "audience": "Beginners",
+        "cost": "Paid",
+        "schedule": "New classes several times a year",
+        "summary": "An online school that teaches software engineering, data, and product skills.",
+        "details": "AltSchool Africa offers a one-year diploma program in tracks like software engineering, data science, and product design. Classes are online, so students can learn from anywhere in Lagos while working or studying."
+    },
+    {
+        "id": 18,
+        "name": "Semicolon Africa",
+        "category": "resource",
+        "area": "Yaba",
+        "audience": "Beginners",
+        "cost": "Paid",
+        "schedule": "Full-time programs",
+        "summary": "A Lagos tech training school that teaches software engineering in person.",
+        "details": "Semicolon Africa trains software engineers through full-time, in-person programs in Lagos. Students work on real projects in teams, which helps them get ready for jobs at tech companies."
+    },
+    {
+        "id": 19,
+        "name": "Ingressive for Good",
+        "category": "resource",
+        "area": "Online",
+        "audience": "Students and beginners",
+        "cost": "Free",
+        "schedule": "Programs open throughout the year",
+        "summary": "A nonprofit that gives African students free tech training, scholarships, and career support.",
+        "details": "Ingressive for Good partners with tech companies to give free courses and scholarships in areas like data, cloud, and product management. It also runs career events and job fairs for young people starting in tech."
+    },
+    {
+        "id": 20,
+        "name": "Decagon",
+        "category": "resource",
+        "area": "Lekki",
+        "audience": "Beginners",
+        "cost": "Paid",
+        "schedule": "Full-time programs",
+        "summary": "A software engineering training program that prepares students for developer jobs.",
+        "details": "Decagon runs an intensive software engineering program where students learn by building real projects. It focuses on job-ready skills like backend development, teamwork, and problem solving."
+    }
+]

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Suggestion | Lagos Tech Connect</title>
+    <meta name="description" content="Thank you for suggesting a place to add to the Lagos Tech Connect guide. Here is a summary of what you sent.">
+    <meta name="author" content="Oluchukwu Ordiah">
+    <meta property="og:title" content="Thank You | Lagos Tech Connect">
+    <meta property="og:description" content="Thank you for helping grow the Lagos Tech Connect guide.">
+    <meta property="og:image" content="https://theoluordiah.github.io/wdd231/final/images/og-image.png">
+    <meta property="og:url" content="https://theoluordiah.github.io/wdd231/final/thankyou.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lagos Tech Connect">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/thankyou.mjs"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Lagos Tech Connect</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="suggest.html" class="active">Suggest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thank You!</h1>
+        <p>Your suggestion was received. Here is what you sent:</p>
+        <dl id="summary" class="summary"></dl>
+        <p><a class="button" href="explore.html">Back to Explore</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lagos Tech Connect | Oluchukwu Ordiah | Lagos, Nigeria</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

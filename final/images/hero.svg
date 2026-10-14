@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2A541"/>
+      <stop offset="1" stop-color="#F8D9A8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky)"/>
+  <circle cx="930" cy="150" r="70" fill="#FFF3DC"/>
+  <g fill="#1E2A32">
+    <rect x="60" y="250" width="70" height="170"/>
+    <rect x="140" y="200" width="60" height="220"/>
+    <rect x="210" y="280" width="80" height="140"/>
+    <rect x="300" y="160" width="55" height="260"/>
+    <rect x="365" y="230" width="90" height="190"/>
+    <rect x="465" y="120" width="60" height="300"/>
+    <path d="M480 120l15-40 15 40z"/>
+    <rect x="535" y="210" width="85" height="210"/>
+    <rect x="630" y="260" width="65" height="160"/>
+    <rect x="705" y="180" width="70" height="240"/>
+    <rect x="785" y="240" width="95" height="180"/>
+    <rect x="890" y="200" width="60" height="220"/>
+    <rect x="960" y="270" width="85" height="150"/>
+    <rect x="1055" y="230" width="70" height="190"/>
+  </g>
+  <g fill="#F2A541" opacity="0.8">
+    <rect x="152" y="220" width="10" height="12"/><rect x="176" y="220" width="10" height="12"/><rect x="152" y="250" width="10" height="12"/>
+    <rect x="312" y="180" width="10" height="12"/><rect x="334" y="210" width="10" height="12"/>
+    <rect x="478" y="150" width="10" height="12"/><rect x="502" y="180" width="10" height="12"/><rect x="478" y="210" width="10" height="12"/>
+    <rect x="720" y="200" width="10" height="12"/><rect x="746" y="230" width="10" height="12"/>
+    <rect x="902" y="220" width="10" height="12"/><rect x="926" y="250" width="10" height="12"/>
+  </g>
+  <rect y="400" width="1200" height="100" fill="#0B5D3B"/>
+  <path d="M0 380q300-40 600 0t600 0v20H0z" fill="#13804F"/>
+  <path d="M0 395h1200" stroke="#F4F7F5" stroke-width="6"/>
+  <g stroke="#F4F7F5" stroke-width="4">
+    <path d="M100 395v30M250 395v30M400 395v30M550 395v30M700 395v30M850 395v30M1000 395v30M1150 395v30"/>
+  </g>
+  <path d="M0 450q60-12 120 0t120 0 120 0 120 0 120 0 120 0 120 0 120 0 120 0 120 0" stroke="#7FC4A3" stroke-width="3" fill="none"/>
+</svg>

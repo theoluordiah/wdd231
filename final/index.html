@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Tech Connect | Tech Communities, Events, and Coworking in Lagos</title>
+    <meta name="description" content="Find tech communities, developer events, coworking spaces, and learning resources in Lagos, Nigeria, all in one guide.">
+    <meta name="author" content="Oluchukwu Ordiah">
+    <meta property="og:title" content="Lagos Tech Connect | Your Guide to the Lagos Tech Scene">
+    <meta property="og:description" content="Find tech communities, developer events, coworking spaces, and learning resources in Lagos, Nigeria.">
+    <meta property="og:image" content="https://theoluordiah.github.io/wdd231/final/images/og-image.png">
+    <meta property="og:url" content="https://theoluordiah.github.io/wdd231/final/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lagos Tech Connect">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/home.mjs"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Lagos Tech Connect</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="suggest.html">Suggest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/hero.svg" alt="Illustration of the Lagos skyline at sunset above the lagoon and Third Mainland Bridge" width="1200" height="500">
+            <div class="hero-text">
+                <h1>Find your people in Lagos tech</h1>
+                <p>Communities, events, coworking spaces, and learning resources for developers and creatives, all in one place.</p>
+                <a class="button" href="explore.html">Start Exploring</a>
+            </div>
+        </section>
+
+        <p id="saved-message" class="notice" hidden></p>
+
+        <section>
+            <h2>What You Will Find</h2>
+            <ul id="stats" class="stats"></ul>
+        </section>
+
+        <section>
+            <h2>Featured Picks</h2>
+            <p>Three random places from the guide. Refresh the page to see different picks.</p>
+            <div id="featured" class="card-grid"></div>
+        </section>
+
+        <section class="split">
+            <div>
+                <h2>New to Tech in Lagos?</h2>
+                <p>Joining a community is one of the fastest ways to learn. Most meetups are free, friendly to beginners, and full of people who are happy to help. Start with a community, go to one event, and find a coworking space when you need a place to focus.</p>
+            </div>
+            <div class="callout">
+                <h2>Know a Place We Missed?</h2>
+                <p>Help other people find great communities, events, and spaces by sending a suggestion.</p>
+                <a class="button" href="suggest.html">Suggest a Place</a>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="details-dialog" aria-labelledby="dialog-title">
+        <button id="close-dialog" type="button" aria-label="Close details">✕</button>
+        <div id="dialog-content"></div>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lagos Tech Connect | Oluchukwu Ordiah | Lagos, Nigeria</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

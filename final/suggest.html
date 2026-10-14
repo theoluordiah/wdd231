@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest a Community, Event, or Space | Lagos Tech Connect</title>
+    <meta name="description" content="Suggest a Lagos tech community, event, coworking space, or learning resource to add to the Lagos Tech Connect guide.">
+    <meta name="author" content="Oluchukwu Ordiah">
+    <meta property="og:title" content="Suggest a Place | Lagos Tech Connect">
+    <meta property="og:description" content="Know a Lagos tech community, event, or coworking space we missed? Send a suggestion.">
+    <meta property="og:image" content="https://theoluordiah.github.io/wdd231/final/images/og-image.png">
+    <meta property="og:url" content="https://theoluordiah.github.io/wdd231/final/suggest.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Lagos Tech Connect">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="scripts/suggest.mjs"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <img src="images/logo.svg" alt="" width="48" height="48">
+            <span>Lagos Tech Connect</span>
+        </a>
+        <button id="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <nav id="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="suggest.html" class="active" aria-current="page">Suggest</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Suggest a Place</h1>
+        <div class="split">
+            <form class="suggest-form" action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>About You</legend>
+                    <label for="name">Full name *</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Suggestion</legend>
+                    <label for="place">Name of the community, event, or space *</label>
+                    <input type="text" id="place" name="place" minlength="2" required>
+
+                    <label for="category">Type *</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled selected>Choose a type</option>
+                        <option value="community">Community</option>
+                        <option value="event">Event</option>
+                        <option value="coworking">Coworking Space</option>
+                        <option value="resource">Learning Resource</option>
+                    </select>
+
+                    <label for="area">Area</label>
+                    <select id="area" name="area">
+                        <option value="Yaba">Yaba</option>
+                        <option value="Ikeja">Ikeja</option>
+                        <option value="Gbagada">Gbagada</option>
+                        <option value="Surulere">Surulere</option>
+                        <option value="Lagos Island">Lagos Island</option>
+                        <option value="Victoria Island">Victoria Island</option>
+                        <option value="Lekki">Lekki</option>
+                        <option value="Online">Online</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="reason">Why should it be added? *</label>
+                    <textarea id="reason" name="reason" rows="4" minlength="10" required></textarea>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+                <button class="button" type="submit">Send Suggestion</button>
+            </form>
+
+            <aside class="callout">
+                <h2>What Makes a Good Suggestion?</h2>
+                <ul>
+                    <li>It is based in Lagos or open to people in Lagos.</li>
+                    <li>It is still active and welcomes new people.</li>
+                    <li>It helps developers, designers, or other creatives learn, meet, or work.</li>
+                </ul>
+                <p>Fields marked with * are required.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2026</span> Lagos Tech Connect | Oluchukwu Ordiah | Lagos, Nigeria</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="siteplan.html">Site Plan</a></p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
